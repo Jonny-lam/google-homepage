@@ -18,19 +18,24 @@ ul {
 
 #nav_bar li {
     display: inline-block;
+    line-height: 24px;
     padding: 8px;
+    outline: none;
+    vertical-align: middle;
+    
 }
 
 #nav_bar #sign_in {
     background: #4887ef;
-    margin-right: 20px;
-    padding: 7px 15px;
-    border-radius: 3px;
+    margin-right: 15px;
+    padding: 5px 10px;
+    border-radius: 1px;
     font-weight: bold;
 }
 
 .nav-links{
     color: #404040;
+
 }
 
 a {
@@ -49,3 +54,115 @@ li.nav-links a: hover{
 #sign_in {
     color: #fff;
 }
+
+.google #google_logo {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding-top:80px;
+    padding-bottom: 20px;
+}
+
+.form {
+    text-align: center;
+}
+
+#form-search {
+    background-color: transparent;
+    width: 575px;
+    line-height: 40px;
+    padding: 0;
+    margin:0 auto;
+    border-radius:30px;
+    border:1px solid #dcdcdc;
+}
+
+
+.form #form-search {
+    padding: 0 8px; 
+    border: 0, auto;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 35px;  
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 20px;
+    color: #666666;
+    border-top: solid 1px #e4e4e4;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    padding-left:30px;
+}
+
+footer ul li {
+    display: inline;
+    border-top: 1px; solid #e4e4e4
+    color: #666666;
+    font-size: 14px;
+    padding: 13px;
+}
+
+footer ul {
+    float: left;
+    padding: 1px;
+}
+
+footer ul a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    float: right;
+    padding-right: 27px;
+}
+
+@media screen and (max-width: 565px) {
+
+    li.nav-links a {
+        display: none;
+    }
+
+    #google_logo {
+        padding: 0;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    #form-search {
+        width: 80%;
+    }
+
+    footer {
+        bottom: 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+    }
+
+    footer ul {
+        float: none;
+        padding-bottom: 2px;
+    }
+  
+    .footer-left {
+        text-align: center;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .footer-right {
+        float: none;
+        text-align: center;
+    }
+}
+
